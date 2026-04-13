@@ -1,7 +1,6 @@
 "use client";
 import { PERSONAS } from "@/lib/personas";
 import { usePersonaStore } from "@/lib/store";
-import ThemeToggle from "@/components/theme/ThemeToggle";
 
 export default function Topbar({
   title,
@@ -33,7 +32,6 @@ export default function Topbar({
           {subtitle ?? `${persona.dba} · ${persona.city}`}
         </p>
       </div>
-      <ThemeToggle />
     </div>
   );
 }
