@@ -1,0 +1,65 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --font-sans: var(--font-inter), system-ui, -apple-system, "Segoe UI", sans-serif;
+  --bg: #FAFBFD;
+  --surface: #FFFFFF;
+  --border: #E3E8EE;
+  --text: #0A2540;
+}
+
+.dark {
+  --bg: #0A0E27;
+  --surface: #131A3A;
+  --border: #242D4E;
+  --text: #E3E8EE;
+  color-scheme: dark;
+}
+
+html, body {
+  background: var(--bg);
+  color: var(--text);
+  font-feature-settings: "cv11", "ss01", "ss03";
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body { font-family: var(--font-sans); letter-spacing: -0.005em; }
+
+h1, h2, h3, h4 { letter-spacing: -0.02em; }
+
+.tabular { font-variant-numeric: tabular-nums; }
+
+button:focus-visible, a:focus-visible {
+  outline: 2px solid #635BFF;
+  outline-offset: 2px;
+  border-radius: 6px;
+}
+
+/* Smooth theme transition */
+*, *::before, *::after {
+  transition: background-color 0.2s ease, border-color 0.2s ease, color 0.2s ease;
+}
+
+/* Scrollbar (dark-aware) */
+::-webkit-scrollbar { width: 10px; height: 10px; }
+::-webkit-scrollbar-track { background: transparent; }
+::-webkit-scrollbar-thumb { background: rgba(105, 115, 134, 0.3); border-radius: 8px; }
+::-webkit-scrollbar-thumb:hover { background: rgba(105, 115, 134, 0.5); }
+
+/* Recharts tooltip dark-mode fix */
+.recharts-default-tooltip {
+  border-radius: 8px !important;
+  border: 1px solid var(--border) !important;
+  background: var(--surface) !important;
+  box-shadow: 0 4px 12px rgba(10,37,64,0.08) !important;
+}
+.dark .recharts-cartesian-axis-tick text { fill: #8B94AD !important; }
+.recharts-cartesian-axis-tick text { font-size: 11px; }
+.recharts-cartesian-grid line { stroke: var(--border); }
+
+@media (max-width: 768px) {
+  .tabular { font-variant-numeric: normal; }
+}
