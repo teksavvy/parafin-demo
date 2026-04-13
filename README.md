@@ -5,13 +5,6 @@ data with Parafin's real sandbox and embeds Parafin's capital experience
 inside its own Capital tab. A floating persona switcher flips between four
 seeded merchants, each sitting in a different capital state.
 
-## Docs
-
-- **[ARCHITECTURE.md](./ARCHITECTURE.md)** — app layout, proxy routes, state
-  derivation, embed model.
-- **[SETUP.md](./SETUP.md)** — pre-work, seeding walkthrough, development
-  steps, gotchas, sandbox limitations.
-
 ## Quickstart
 
 ### Prereqs
@@ -93,3 +86,10 @@ Current coverage focuses on pure logic:
 
 Adding a test: drop a `*.test.ts` file next to the module under test.
 `vitest.config.ts` has `@/` aliased to the project root.
+
+## Docs
+
+- **[ARCHITECTURE.md](./ARCHITECTURE.md)** — app layout, proxy routes, state
+  derivation, embed model.
+- **[SETUP.md](./SETUP.md)** — pre-work, seeding walkthrough, development
+  steps, gotchas, sandbox limitations.
