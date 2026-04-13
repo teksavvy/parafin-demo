@@ -17,7 +17,7 @@ seeded merchants, each sitting in a different capital state.
 ### Prereqs
 
 - Node 20+ and npm
-- Parafin sandbox credentials (client ID + secret)
+- Parafin sandbox credentials (client ID + secret) — grab them from the [Parafin Dashboard](https://dashboard.parafin.com) under **Developers → API Keys**
 
 ### Install
 
@@ -27,7 +27,7 @@ npm install
 
 ### Configure env
 
-Create `.env.local` at the project root (template in `.env.local.example`):
+Create `.env.local` at the project root (template in `.env.local.example`). Fetch your sandbox credentials from the [Parafin Dashboard](https://dashboard.parafin.com) (**Developers → API Keys**):
 
 ```
 PARAFIN_CLIENT_ID=your-sandbox-client-id
