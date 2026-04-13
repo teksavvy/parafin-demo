@@ -42,6 +42,8 @@ The same file is read by both the Next.js runtime and the seed script.
 npm run dev        # http://localhost:3000
 ```
 
+> **Port 3000 already in use?** Either free it with `lsof -ti:3000 | xargs kill -9`, or start on another port: `npm run dev -- -p 3001`.
+
 You land on `/dashboard`. The Capital tab is at `/dashboard/capital`.
 
 ### Demo flow
