@@ -10,7 +10,7 @@ if (fs.existsSync(envPath)) {
   }
 }
 
-const BASE = "https://api.parafin.com";
+const BASE = process.env.PARAFIN_API_BASE ?? "https://api.parafin.com";
 const AUTH =
   "Basic " +
   Buffer.from(

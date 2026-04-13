@@ -1,4 +1,4 @@
-const BASE = "https://api.parafin.com";
+const BASE = process.env.PARAFIN_API_BASE ?? "https://api.parafin.com";
 
 function authHeader(): string {
   const id = process.env.PARAFIN_CLIENT_ID;
