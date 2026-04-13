@@ -93,8 +93,3 @@ Current coverage focuses on pure logic:
 
 Adding a test: drop a `*.test.ts` file next to the module under test.
 `vitest.config.ts` has `@/` aliased to the project root.
-
-## More docs
-
-- **[ARCHITECTURE.md](./ARCHITECTURE.md)** — app layout, proxy routes, state derivation, embed.
-- **[SETUP.md](./SETUP.md)** — pre-work, seeding, development steps, gotchas, sandbox limitations.
